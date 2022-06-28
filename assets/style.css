@@ -1,0 +1,145 @@
+:root {
+    --customColor: rgb(52, 9, 243);
+    --textColor: white;
+}
+
+h1 {
+    background-color: var(--customColor);
+    color: var(--textColor);
+    text-align: center;
+    width: auto;
+    font-size: 50px;
+    border: var(--customColor) 8px solid;
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px 0px 20px 20px var(--customColor);
+}
+
+p {
+    display: block;
+    background-color: var(--customColor);
+    color: var(--textColor);
+    height: min-content;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    /* margin: 100px 0px 100px 0px; */
+    padding: 10px 0px 10px 0px;
+}
+
+#rulesPara {
+    display: block;
+    background-color: var(--customColor);
+    color: var(--textColor);
+    height: min-content;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    border: var(--customColor) 8px solid;
+    border-radius: 16px;
+    margin: 200px 0px 100px 0px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 20px 20px var(--customColor);
+}
+
+#startGame {
+    background-color: var(--customColor);
+    color: var(--textColor);
+    width: auto;
+    height: 50px;
+    margin-top: 50px;
+    border: var(--customColor) 8px solid;
+    border-radius: 16px;
+    cursor: crosshair;
+}
+
+#startGame:hover {
+    opacity: 90%;
+    box-shadow: 0px 0px 15px 2.5px var(--customColor);
+}
+
+.gridCentering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#questionPara {
+    width: 100%;
+    box-shadow: 0px 0px 15px 15px var(--customColor);
+}
+
+#questionBtns {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.answerBtns {
+    background-color: var(--customColor);
+    color: var(--textColor);
+    width: auto;
+    height: 50px;
+    border: var(--customColor) 8px solid;
+    border-radius: 16px;
+    cursor: crosshair;
+    width: auto;
+    margin: 50px 10px 0px 10px;
+}
+
+#statsDiv {
+    margin-top: 50px;
+}
+
+.statsPara {
+    color: var(--customColor);
+    background-color: white;
+    margin: 0;
+}
+
+#formDiv {
+    background-color: var(--customColor);
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    border: var(--customColor) 8px solid;
+    border-radius: 16px;
+}
+
+#initals {
+    background-color: white;
+    color: var(--customColor)
+}
+
+#initalsSubmit {
+    color: var(--customColor);
+    background-color: white;
+    border: var(--customColor) 4px solid;
+    border-radius: 8px;
+    width: 40%;
+    padding: 0px 10px 10px 0px;
+    height: 25px;    
+}
+
+.leaderboard {
+    margin-top: 200px;
+    background-color: var(--customColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: var(--customColor) 8px solid;
+    border-radius: 16px;
+}
+
+.leaderboardRankDivs {
+    height: 25px;
+    width: 80%;
+    background-color: white;
+    color: var(--customColor);
+    text-align: center;
+    margin: 10px 10px 0px 25px;
+    border: var(--textColor) 4px solid;
+    border-radius: 8px;
+}
+
+.hide {
+    display: none;
+}

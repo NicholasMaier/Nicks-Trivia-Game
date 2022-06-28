@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Nicks Trivia Game</title>
+        <link rel="stylesheet" href="./assets/reset.css" />
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Nicks Trivia Game</h1>
+        </header>
+
+        <div id="introDiv">
+
+            <div class="gridCentering">
+                <div></div>
+                <p id="rulesPara">Be prepared to answer Javascript questions every time you answer a question correctly you will recieve 100 points every time you answer a question incorretly you will recieve a 5 second penalty when the time runs out the game will be over. Good Luck :)</p>
+                <div></div>
+            </div>
+
+            <div class="gridCentering">
+                <div></div>
+                <button id="startGame">Start Game</button>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="questionDiv" class="hide">
+
+            <p id="questionPara">this is a question ikdjaidjaidjoajdaofnjnfjandjnakdjnadkj :)</p>
+
+            <div class="gridCentering">
+
+                <div></div>
+                <section id="questionBtns">
+                    <button id="answerBtn1" class="answerBtns">A. Answer 1</button>
+                    <button id="answerBtn2" class="answerBtns">B. Answer 2</button>
+                    <button id="answerBtn3" class="answerBtns">C. Answer 3</button>
+                    <button id="answerBtn4" class="answerBtns">D. Answer 4</button>
+                </section>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="statsDiv" class="hide">
+
+            <p id="timerPara" class="statsPara"></p>
+
+            <p id="questionValidation" class="statsPara"></p>
+
+            <p id="currentScoreKeeper" class="statsPara"></p>
+
+        </div>
+
+        <div id="outroDiv" class="hide">
+
+            <p id="currentScorePara"></p>
+
+            <div class="gridCentering">
+                <div></div>
+                <div id="formDiv">
+                    <label for="initals">Initals:</label>
+
+                    <input type="text" maxlength="3" id="initals" name="initals">
+
+                    <button id="initalsSubmit">Submit</button>
+                </div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="gridCentering">
+        <div></div>
+        <div id="leaderboardDiv" class="hide">
+            <div id="initals1" class="leaderboardRankDivs"></div>
+            <div id="score1" class="leaderboardRankDivs"></div>
+            <div id="initals2" class="leaderboardRankDivs"></div>
+            <div id="score2" class="leaderboardRankDivs"></div>
+            <div id="initals3" class="leaderboardRankDivs"></div>
+            <div id="score3" class="leaderboardRankDivs"></div>
+            <div id="initals4" class="leaderboardRankDivs"></div>
+            <div id="score4" class="leaderboardRankDivs"></div>
+            <div id="initals5" class="leaderboardRankDivs"></div>
+            <div id="score5" class="leaderboardRankDivs"></div>
+            <div id="initals6" class="leaderboardRankDivs"></div>
+            <div id="score6" class="leaderboardRankDivs"></div>
+            <div id="initals7" class="leaderboardRankDivs"></div>
+            <div id="score7" class="leaderboardRankDivs"></div>
+            <div id="initals8" class="leaderboardRankDivs"></div>
+            <div id="score8" class="leaderboardRankDivs"></div>
+        </div>
+        </div>
+
+        <script src="./assets/script.js"></script>
+
+    </body>
+
+</html>
