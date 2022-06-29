@@ -124,7 +124,6 @@ p {
     background-color: var(--customColor);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     border: var(--customColor) 8px solid;
     border-radius: 16px;
 }

@@ -15,21 +15,21 @@ var initalsSubmit = document.querySelector("#initalsSubmit");
 var initals = document.querySelector("#initals");
 var leaderboardDiv = document.querySelector("#leaderboardDiv");
 var initals1 = document.querySelector("#initals1");
-var initals2 = document.querySelector("#initals2");
-var initals3 = document.querySelector("#initals3");
-var initals4 = document.querySelector("#initals4");
-var initals5 = document.querySelector("#initals5");
-var initals6 = document.querySelector("#initals6");
-var initals7 = document.querySelector("#initals7");
-var initals8 = document.querySelector("#initals8");
+// var initals2 = document.querySelector("#initals2");
+// var initals3 = document.querySelector("#initals3");
+// var initals4 = document.querySelector("#initals4");
+// var initals5 = document.querySelector("#initals5");
+// var initals6 = document.querySelector("#initals6");
+// var initals7 = document.querySelector("#initals7");
+// var initals8 = document.querySelector("#initals8");
 var score1 = document.querySelector("#score1");
-var score2 = document.querySelector("#score2");
-var score3 = document.querySelector("#score3");
-var score4 = document.querySelector("#score4");
-var score5 = document.querySelector("#score5");
-var score6 = document.querySelector("#score6");
-var score7 = document.querySelector("#score7");
-var score8 = document.querySelector("#score8");
+// var score2 = document.querySelector("#score2");
+// var score3 = document.querySelector("#score3");
+// var score4 = document.querySelector("#score4");
+// var score5 = document.querySelector("#score5");
+// var score6 = document.querySelector("#score6");
+// var score7 = document.querySelector("#score7");
+// var score8 = document.querySelector("#score8");
 
 var currentScore = 0;
 
@@ -54,41 +54,41 @@ answerBtn4.addEventListener("click", function() {
 let allQuestions = [
   //first question
   {"title": "question0",
-   answers: [false, false, true, false]  
+   answers: [true, false, false, false]  
   },
   //second question
   {"title": "question1",
-  answers: [false, true, false, false]
+  answers: [true, false, false, false]
   },
-   //third question
+    //third question
    {"title": "question2",
-   answers: [false, false, false, true]
+   answers: [false, true, false, false]
   },
-  //fourth question
+    //fourth question
    {"title": "question3",
    answers: [true, false, false, false]
   },
-    //fifth question
+     //fifth question
     {"title": "question4",
-    answers: [false, false, false, true]
+    answers: [false, false, true, false]
   },
      //sixth question
-     {"title": "question5",
+    {"title": "question5",
      answers: [false, false, true, false]
   },
-      //seventh question
+    //seventh question
    {"title": "question6",
    answers: [false, false, true, false]
   },
-    //eighth question
+     //eighth question
     {"title": "question7",
     answers: [true, false, false, false]
   },
      //nineth question
-     {"title": "question8",
+    {"title": "question8",
      answers: [false, true, false, false]
   },
-      //tenth question
+    //tenth question
    {"title": "question9",
    answers: [false, false, true, false]
   },
@@ -109,91 +109,91 @@ function nextQuestion () {
     console.log(currentQuestion);
 
     if (currentQuestion == allQuestions[0]) {
-      questionPara.innerHTML = "What is a Variable?";
-      answerBtn1.innerHTML = "A cat";
-      answerBtn2.innerHTML = "A place to store arrays and";
-      answerBtn3.innerHTML = "An area that can vary and store values";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "Javascript is an _______ language?";
+      answerBtn1.innerHTML = "Object-Oriented";
+      answerBtn2.innerHTML = "Object-Based";
+      answerBtn3.innerHTML = "Procedural";
+      answerBtn4.innerHTML = "None of the above";
     }
 
     else if (currentQuestion == allQuestions[1]) {
-      questionPara.innerHTML = "What is an Array";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "69";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "Which of the following keywords is used to define a variable in Javascript?";
+      answerBtn1.innerHTML = "var";
+      answerBtn2.innerHTML = "let";
+      answerBtn3.innerHTML = "Both A and B";
+      answerBtn4.innerHTML = "None of the above";
     }
 
     else if (currentQuestion == allQuestions[2]) {
-      questionPara.innerHTML = "What is a For Loop?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "18";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "Which of the following methods is used to access HTML elements using Javascript?";
+      answerBtn1.innerHTML = "getElementsByClassName()";
+      answerBtn2.innerHTML = "getElementbyId()";
+      answerBtn3.innerHTML = "Both A and B";
+      answerBtn4.innerHTML = "None of the above";
     }
 
     else if (currentQuestion == allQuestions[3]) {
-      questionPara.innerHTML = "What is a String?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "Upon encountering empty statements, what does the Javascript Interpreter do?";
+      answerBtn1.innerHTML = "Throws an error";
+      answerBtn2.innerHTML = "Gives a warning";
+      answerBtn3.innerHTML = "Ignores the statements";
+      answerBtn4.innerHTML = "None of the above";
     }  
 
     else if (currentQuestion == allQuestions[4]) {
-      questionPara.innerHTML = "What is Condition?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "Which of the following methods can be used to display data in some form using Javascript?";
+      answerBtn1.innerHTML = "document.write()";
+      answerBtn2.innerHTML = "console.log()";
+      answerBtn3.innerHTML = "window.alert()";
+      answerBtn4.innerHTML = "All of the above";
     } 
 
     else if (currentQuestion == allQuestions[5]) {
       questionPara.innerHTML = "What is a Boolean?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      answerBtn1.innerHTML = "A number";
+      answerBtn2.innerHTML = "A piece of text";
+      answerBtn3.innerHTML = "A true or false value";
+      answerBtn4.innerHTML = "None of the above";
     } 
 
     else if (currentQuestion == allQuestions[6]) {
-      questionPara.innerHTML = "What does Console.log do?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "How can a datatype be declared to be a constant type?";
+      answerBtn1.innerHTML = "const";
+      answerBtn2.innerHTML = "var";
+      answerBtn3.innerHTML = "let";
+      answerBtn4.innerHTML = "constant";
     } 
 
     else if (currentQuestion == allQuestions[7]) {
-      questionPara.innerHTML = "What is a Object?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "When the switch statement matches the expression with the given labels, how is the comparison done?";
+      answerBtn1.innerHTML = "Only the datatype of the expression is compared";
+      answerBtn2.innerHTML = "Both the datatype and the result of the expression are compared";
+      answerBtn3.innerHTML = "Only the value of the expression is compared";
+      answerBtn4.innerHTML = "None of the above";
     } 
 
     else if (currentQuestion == allQuestions[8]) {
-      questionPara.innerHTML = "What is Math.Random used for?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "What keyword is used to check whether a given property is valid or not?";
+      answerBtn1.innerHTML = "exists";
+      answerBtn2.innerHTML = "is in";
+      answerBtn3.innerHTML = "in";
+      answerBtn4.innerHTML = "lies";
     } 
 
     else if (currentQuestion == allQuestions[9]) {
-      questionPara.innerHTML = "What is += mean?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "What is the use of the <noscript> tag in Javascript?";
+      answerBtn1.innerHTML = "The contents are displayed by non-JS-based browsers";
+      answerBtn2.innerHTML = "Clears all the cookies and cache";
+      answerBtn3.innerHTML = "Both A and B";
+      answerBtn4.innerHTML = "None of the above";
     } 
 
     else if (currentQuestion == allQuestions[10]) {
-      questionPara.innerHTML = "Which one of these is a number variable?";
-      answerBtn1.innerHTML = "22";
-      answerBtn2.innerHTML = "3";
-      answerBtn3.innerHTML = "26";
-      answerBtn4.innerHTML = "-4";
+      questionPara.innerHTML = "When an operators value is NULL, the typeof returned by the unary operator is:";
+      answerBtn1.innerHTML = "Boolean";
+      answerBtn2.innerHTML = "Undefined";
+      answerBtn3.innerHTML = "Object";
+      answerBtn4.innerHTML = "Integer";
     } 
 }
 
@@ -253,78 +253,61 @@ function endOfGame() {
   questionDiv.classList.add("hide");
   statsDiv.classList.add("hide");
   outroDiv.classList.remove("hide");
-  currentScorePara.innerHTML = currentScore;
+  // currentScorePara.innerHTML = currentScore;
   initalsSubmit.addEventListener("click", highscoreLeaderBoard);
 }
 
 function highscoreLeaderBoard() {
   // localStorage.clear();
+  var enteredInitals = initals.value;
+  // let rawLeaderboard = localStorage.getItem("leaderboard");
+  // let leaderboard = JSON.parse(rawLeaderboard);
+  let highScore = localStorage.getItem("highScore");
+  let highScoreInitals = localStorage.getItem("highScoreInitals");
 
-  let rawLeaderboard = localStorage.getItem("leaderboard");
-  let leaderboard = JSON.parse(rawLeaderboard);
-    
-
-  if (leaderboard == null){
+  if (highScore == null){
     console.log("its nuuuuuuullllllll");
 
-    leaderboard = [
-      {"initals": initals.value,
-       "score": currentScore}
-    ];
+    localStorage.setItem("highScore", currentScore);
+    localStorage.setItem("highScoreInitals", enteredInitals);
+    initals1.innerHTML = enteredInitals;
+    score1.innerHTML = currentScore;
+    console.log(enteredInitals);
+    // leaderboard = [
+    //   {"highScoreInitals": initals.value,
+    //    "highScore": currentScore}
+
+    // ];
   }
 
-   else {
-    leaderboard += {"initals": initals.value,
-                    "score": currentScore};
-  }
-  var stringifedLeaderboard = JSON.stringify(leaderboard)
-  localStorage.setItem("leaderboard", stringifedLeaderboard);
+//If there was a previous player this if statement checks if the old score is greater then the new score
+  else if (currentScore >= highScore) {
 
-  console.log(leaderboard);
+    localStorage.setItem("highScore", currentScore);
+    localStorage.setItem("highScoreInitals", enteredInitals);
+    console.log(enteredInitals);
+    initals1.innerHTML = enteredInitals;
+    score1.innerHTML = currentScore;
+  
+  }
+
+  else {
+    initals1.innerHTML = highScoreInitals;
+    score1.innerHTML = highScore;
+
+    console.log(enteredInitals);
+  }
+
+  // var stringifedLeaderboard = JSON.stringify(leaderboard)
+  // localStorage.setItem("leaderboard", stringifedLeaderboard);
+
+  console.log("Its highscore time!!!");
 
 
   
-
-  initals1.innerHTML = leaderboard[0].initals;
-  score1.innerHTML = leaderboard[0].score;
-
-  if (leaderboard.length > 1) {
-    initals2.innerHTML = leaderboard[1].initals;
-    score2.innerHTML = leaderboard[1].score;
-  }
-
-  if (leaderboard.length > 2) {
-    initals3.innerHTML = leaderboard[2].initals;
-    score3.innerHTML = leaderboard[2].score;
-  }
-
-  if (leaderboard.length > 3) {
-    initals4.innerHTML = leaderboard[3].initals;
-    score4.innerHTML = leaderboard[3].score;
-  }
-
-  if (leaderboard.length > 4) {
-    initals5.innerHTML = leaderboard[4].initals;
-    score5.innerHTML = leaderboard[4].score;
-  }
-
-  if (leaderboard.length > 5) {
-    initals6.innerHTML = leaderboard[5].initals;
-    score6.innerHTML = leaderboard[5].score;
-  }
-
-  if (leaderboard.length > 6) {
-    initals7.innerHTML = leaderboard[6].initals;
-    score7.innerHTML = leaderboard[6].score;
-  }
-
-  if (leaderboard.length > 7) {
-    initals8.innerHTML = leaderboard[7].initals;
-    score8.innerHTML = leaderboard[7].score;
-  }
-
   outroDiv.classList.add("hide");
   leaderboardDiv.classList.remove("hide");
   leaderboardDiv.classList.add("leaderboard");
+
 }
 
